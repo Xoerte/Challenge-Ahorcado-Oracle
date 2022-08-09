@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+background-color:#e6ebff ;
+font-family: 'Roboto', sans-serif;
+
+}
+
+#bto-1 {
+	
+	border:none;
+	background-color:#006699 ;
+    font-weight: bold;
+    font-size: 14px;
+    font-style: italic;
+    color: #e6ebff
+}
+
+.bt-1 {
+  
+  width: 28%;
+  height:80px;
+  border-radius: 20px;
+  margin-left: 34%;
+  margin-top: 16%;
+  
+}
+
+button {
+	
+	transition: 0.8s;
+
+}
+
+button:hover{
+	
+	filter: brightness(1.20);
+    transform: scale(1.05);
+
+}
+#bto-2 {
+	
+	background-color: #e6ebff;
+	margin-top: 3%;
+    height: 60px !important;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    color:#001a4d;
+    border-color: #006699;
+}
+nav {
+  	
+  	background-color:#b3ccff ;
+    height: 10% !important;
+    
+}
+
+main {
+	
+	display: flex;
+	flex-direction: column;
+    height: 100%;
+
+}
+
+nav > h1 {
+ 
+ margin-left: 40%;
+ font-weight: bold;
+ letter-spacing: 3px;
+ color: #FFFFFF;
+ font-style: italic;
+
+}
+
+footer {
+
+background-color:#cce0ff ;
+top:97.1%;
+position: absolute;
+width: 100%;
+ 
+}
+
+
+ #tex1 {
+ 
+ margin:4%;
+ border:none;
+ outline: none;
+ height: 20em !important;
+ width: 60%;
+ margin-left: 17%;
+ color:#005580;
+ font-size: 20px !important;
+ resize: none;
+ background-color:#cce0ff ;
+  
+  }
+
+section {
+	
+	width: auto;
+	height: auto;
+}
+
+#botones {
+   
+   margin-left: 15em;
+   margin-top: -1rem;
+   display: flex;
+   grid-gap:5em;
+}
+
+#B-b {
+	
+	background-color: #006699;
+	color:#e6ebff;
+    border:none;
+}
+
+#b-B{
+	
+	background-color: #e6ebff;
+    color: #006699;
+    border-color:#006699;
+}
+
+#botones > button {
+  
+  border-radius: 30px;
+  height: 4rem;
+  width: 20rem;
+  font-size: 18px;
+  font-style: italic;
+
+}
+
+#botones > button:hover {
+	transform: scale(1.05);
+}
+
+#t-3 {
+   
+   width: 3rem;
+   height: 3rem;
+   margin: 1rem 0 0 40rem;
+   border-radius: 15px;
+   border-color: #006699;
+   font-size: 3.7rem !important;
+   outline: none;
+}
+
+#b-3  {
+	width: 6rem;
+	margin: 0.5rem 0 0 38.6rem;
+    border-radius: 50px;
+    border:none;
+    background-color: #006699;
+    color:#e6ebff;
+}
+
+#c-d {
+	margin: 1rem 0 0 3rem;
+    grid-gap:5px;
+}
+
+#b-2 {
+  border-radius: 50px;
+  width: 15rem;
+  background-color: #006699;
+  border:none; 
+  height: 3rem;
+  font-size:15px;
+  font-style: italic;
+  color:#e6ebff;
+  font-weight: bold;
+}
+
+#b-1 {
+  width: 15rem;
+  border-radius: 50px;
+ border-color: #006699;
+ font-size: 15px;
+ font-style: italic;
+ font-weight: bold;
+ color: #006699;
+}
+#container1 > div {
+    font-size: 50px;
+    
+}
+#container1 {
+	display: flex;
+	flex-direction: row;
+   margin-left: 30rem;
+   margin-top: 1rem;
+
+}
+
+.letraAdivinada {
+	
+	width: 4.5rem;
+	height: 4.5rem;
+
+	text-align: center;
+	font-size:1.8rem;
+	color:#002462;
+   border-bottom :solid 1px #002462;
+   margin-left: 0.9rem;
+   line-height: 4.5rem;
+  }
