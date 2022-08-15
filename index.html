@@ -2,60 +2,58 @@
 <html>
 <head>
 	<title>AHORCADO</title>
-   <meta charset=UTF-8>
-   <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<meta charset=UTF-8>
+	 <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
- <nav><h1>AHORCADO</h1></nav>
-   <!-- PRIMERA PAGINA -->
-  
- <div id="Pr-p"> 
-   <button class="bt-1" id="bto-1">INICIAR JUEGO</button>
-   <div id="divisor-1"></div>
-   <button class="bt-1" id="bto-2">AGREGAR NUEVA PALABRA</button>
- </div> 
-<!--          -->
-<!-- SEGUNDA PAGINA -->
-   <main id="container">
-  
-  <section id="text">
-  	<textarea id="tex1"  placeholder="Ingrese texto aquí"></textarea>
-    
-  </section>
- 
- <section id="botones">
- 	<button id="B-b">Guardar y Empezar</button>
- 	<button id="b-B">Cancelar</button>
- </section>
 
-   </main>
-<!--------------> 
-<!--Tercera Pagina-->
-<main>
+	<nav><div style="background-image: url(3.png);width: 2rem;height: 3rem;position: absolute;margin-left: 3rem;"></div><h1>AHORCADO</h1></nav>
 
-<canvas style="font-size: 5rem;" width="1200" height="400"></canvas> 
- <div>
-	<img src="Imagen1.png" style=" width: 20rem; height: 20rem; margin-left: 28rem;margin-top: 2rem;">
-</div>	
-<div id="container1">
-<div class="letraAdivinada"></div>
+	<!-- PRIMERA PAGINA -->
+	<div id="Pr-p"> 
+		
+		<button class="bt-1" id="bto-1">INICIAR JUEGO</button>
+		<div id="divisor-1"></div>
+		<button class="bt-1" id="bto-2">AGREGAR NUEVA PALABRA</button>
+	</div> 
+	<!--          -->
 
-</div>
-<input id ="t-3" type="text">
-<button id ="b-3">Verificar</button>
-<div id="c-d" style="display: flex;flex-direction:row;margin-left:26.7rem;"> 
-<button id="b-2">Nuevo Juego</button>
-<button id="b-1">Desistir</button>
+	<!-- SEGUNDA PAGINA -->
+	<main id="container">
 
-</div>
+		<section id="text">
+			<textarea id="tex1" onkeyup="this.value=Numeros(this.value)" placeholder="Ingrese texto aquí"></textarea>
+		</section>
 
-</main> 
+		<section id="botones">
+			<button id="B-b">&#10004 Guardar</button>
+			<button id="b-B">&#10148 Volver</button>
+		</section>
 
-<!-------->
-   <footer><h4>Desarrollado por Fabricio---Alura Challenge</h4></footer>
-<script src="app.js"></script>
+	</main>
+	<!--------------> 
+
+	<!--Tercera Pagina-->
+	<main>
+		<img id="ahorcado" src="Imagen1.png">
+		<p id="usado" style="align-self: center;"></p>
+		<p id="output"></p>
+		<input id ="t-3" onkeyup="this.value=Numeros(this.value)" type="text" maxlength="1">
+		<button id ="b-3">Verificar</button>
+
+
+		<div id="c-d" style="display: flex;flex-direction:row;margin-left:26.7rem;">  
+			<button id="b-2">&#8635 Nuevo Juego</button>
+			<button id="b-1">&#10148 Desistir</button>
+		</div>
+	</main> 
+	<!-------->
+
+	<footer><h4>Desarrollado por Fabricio---Alura Challenge</h4></footer>
+	<script src="app.js"></script>
 </body>
 </html>
