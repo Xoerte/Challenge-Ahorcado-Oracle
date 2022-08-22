@@ -11,7 +11,7 @@
 </head>
 <body>
 
-	<nav><div style="background-image: url(3.png);width: 2rem;height: 3rem;position: absolute;margin-left: 3rem;"></div><h1>AHORCADO</h1></nav>
+	<nav><div style="background-image: url(Logo/3.png);width: 2rem;height: 3rem;position: absolute;margin-left: 3rem;"></div><h1>AHORCADO</h1></nav>
 
 	<!-- PRIMERA PAGINA -->
 	<div id="Pr-p"> 
@@ -27,8 +27,9 @@
 
 		<section id="text">
 			<textarea id="tex1" onkeyup="this.value=Numeros(this.value)" placeholder="Ingrese texto aquí"></textarea>
+		    <h6 style="position: absolute;margin-left: 15rem;margin-top: -2rem;">&#9679; Solo Ingresar Mayusculas</h6>
 		</section>
-
+      
 		<section id="botones">
 			<button id="B-b">&#10004 Guardar</button>
 			<button id="b-B">&#10148 Volver</button>
@@ -39,10 +40,10 @@
 
 	<!--Tercera Pagina-->
 	<main>
-		<img id="ahorcado" src="Imagen1.png">
+		<img id="ahorcado" src="Personaje/Imagen1.png">
 		<p id="usado" style="align-self: center;"></p>
 		<p id="output"></p>
-		<input id ="t-3" onkeyup="this.value=Numeros(this.value)" type="text" maxlength="1">
+		<input id ="t-3" onkeyup="this.value=Numeros(this.value)" autocomplete="off" type="text" maxlength="1">
 		<button id ="b-3">Verificar</button>
 
 
@@ -53,7 +54,7 @@
 	</main> 
 	<!-------->
 
-	<footer><h4>Desarrollado por Fabricio---Alura Challenge</h4></footer>
+	<footer><h4>&copy Desarrollado por Fabricio---Alura Challenge</h4></footer>
 	<script src="app.js"></script>
 </body>
 </html>

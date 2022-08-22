@@ -13,6 +13,7 @@ nav {
 }
 nav > h1  {
   margin-left: 30% !important;
+
 }
 .bt-1 {
 	margin-top: 10rem !important;
@@ -65,7 +66,7 @@ img {
 	outline: none;
 }
  #c-d {
- 	margin-left:1rem !important;
+ 	margin-left:0rem !important;
  }
 #t-3 {
 
@@ -112,7 +113,7 @@ img {
 }
 #output{
 	font-size: 34px !important;
-	margin-top: 1rem !important;
+	margin-top: 2.5rem !important;
 	align-self: center;
 	margin-left: -10px !important;
    
@@ -214,7 +215,7 @@ nav > h1 {
 	color: #FFFFFF;
 	font-style: italic;
     font-size: 2rem;
-    
+    font-weight: 900;
 }
 
 footer {
@@ -357,22 +358,23 @@ section {
 }
 
 img {
-	height: 20rem;
+	height: 18rem;
 	width: 20rem;
-	margin: 2rem 0 0 30rem;
+	margin: 1rem 0 0 30rem;
 }
 #output{
-	font-size: 50px;
-	margin-top: 1rem;
+	font-size: 41px;
+	margin-top: 2rem;
 	align-self: center;
 }
 #usado {
-	font-size: 20px;
+	font-size: 18px;
 	position: absolute;
 	font-weight: bold;
-	margin: 23rem 0 0 0 ;
+	margin: 19.5rem 0 0 0 ;
 	letter-spacing: 6px;
 	text-transform: uppercase;
+    color: grey;
 }
 
 /* estilo del contenedor padre */

@@ -21,35 +21,26 @@ var Verificar = document.getElementById("b-3")
 
 
 VolverAcom.addEventListener("click", () =>{
-
-
-	String.prototype.replaceAt=function(index, character) { return this.substring(0, index) + character + this.substring(index+character.length); }
-
-	
-
-	palabra = palabras[Math.floor(Math.random()*palabras.length)]
-
-
-	palabraConGuiones = palabra.replace(/./g, "_ ")
+    
+    String.prototype.replaceAt=function(index, character) { return this.substring(0, index) + character + this.substring(index+character.length); }
+    palabra = palabras[Math.floor(Math.random()*palabras.length)]
+    palabraConGuiones = palabra.replace(/./g, "_ ")
 	vacio = []
 	output.innerHTML = ""
 	contadorFallos = 1;
-
-	document.getElementById("output").innerHTML = palabraConGuiones
-	document.getElementById("ahorcado").src = "Imagen1.png"
-
-
+    document.getElementById("output").innerHTML = palabraConGuiones
+    document.getElementById("ahorcado").src = "Personaje/Imagen1.png"
 })
 
-document.getElementById("output").style.display = "none"
-document.querySelector("img").style.display = "none"
-document.getElementById("b-2").style.display ="none";
-document.getElementById("b-1").style.display ="none";
-document.getElementById("b-3").style.display ="none";
-document.getElementById("t-3").style.display = "none";
-document.getElementById("container").style.display = "none";
-document.getElementById("text").style.display = "none";
-document.getElementById("botones").style.display = "none";
+	document.getElementById("output").style.display = "none"
+	document.querySelector("img").style.display = "none"
+	document.getElementById("b-2").style.display ="none";
+	document.getElementById("b-1").style.display ="none";
+	document.getElementById("b-3").style.display ="none";
+	document.getElementById("t-3").style.display = "none";
+	document.getElementById("container").style.display = "none";
+	document.getElementById("text").style.display = "none";
+	document.getElementById("botones").style.display = "none";
 
 
 
@@ -68,19 +59,15 @@ Volver.addEventListener("click",function(){
 
 
 	 
-	 palabra = palabras[Math.floor(Math.random()*palabras.length)]
-
-
-	palabraConGuiones = palabra.replace(/./g, "_ ")
+	palabra = palabras[Math.floor(Math.random()*palabras.length)]
+    palabraConGuiones = palabra.replace(/./g, "_ ")
 	vacio = []
 	output.innerHTML = ""
 	contadorFallos = 1;
-
-	document.getElementById("output").innerHTML = palabraConGuiones
-	document.getElementById("ahorcado").src = "Imagen1.png"
+    document.getElementById("output").innerHTML = palabraConGuiones
+	document.getElementById("ahorcado").src = "Personaje/Imagen1.png"
 
 })
-
 
 botonAgregarPal.addEventListener("click",function() {
 	
@@ -90,8 +77,6 @@ botonAgregarPal.addEventListener("click",function() {
 	document.getElementById("Pr-p").style.display= "none";
 	document.getElementById("bto-1").style.display = "none";
 	document.getElementById("bto-2").style.display = "none";
-
-
 })
 
 
@@ -102,9 +87,6 @@ botonGuardar.addEventListener("click",function(){
 	palabras.push(x)
     document.getElementById("tex1").value = ""
 	console.log(palabras)
-
-
-
 })
 
 function borrar(id) {var elem = document.getElementById(id); return elem.parentNode.removeChild(elem);}
@@ -122,15 +104,15 @@ function msj(titulo, contenido, idioma) {
 }
 
 
-String.prototype.replaceAt=function(index, character) { return this.substring(0, index) + character + this.substring(index+character.length); }
-var palabras = ["INDEPENDIENTE","MASOQUISTA","MANZANA"]
-var palabra = palabras[Math.floor(Math.random()*palabras.length)]
-var palabraConGuiones = palabra.replace(/./g, "_ ")
-var output = document.getElementById("usado")
-var vacio = [];
-document.getElementById("output").innerHTML = palabraConGuiones
-var len = document.getElementById("output")
-var contadorFallos = 1;
+	String.prototype.replaceAt=function(index, character) { return this.substring(0, index) + character + this.substring(index+character.length); }
+	var palabras = ["INDEPENDIENTE","MASOQUISTA","MANZANA"]
+	var palabra = palabras[Math.floor(Math.random()*palabras.length)]
+	var palabraConGuiones = palabra.replace(/./g, "_ ")
+	var output = document.getElementById("usado")
+	var vacio = [];
+	document.getElementById("output").innerHTML = palabraConGuiones
+	var len = document.getElementById("output")
+	var contadorFallos = 1;
 
 
 Verificar.addEventListener("click", () => {
@@ -150,41 +132,39 @@ if (palabraConGuiones.search("_")==-1)  {
     output.innerHTML = ""
     palabra = palabras[Math.floor(Math.random()*palabras.length)]
 	palabraConGuiones = palabra.replace(/./g,"_ ")
-   document.querySelector("img").src = "Imagen1.png"
-}
+    document.querySelector("img").src = "Personaje/Imagen1.png"
 
-	
 
+ }
 }
 
 if(haFallado) {
 	
 	contadorFallos++
-	document.querySelector("img").src = `Imagen${contadorFallos}.png`
+	document.querySelector("img").src = `Personaje/Imagen${contadorFallos}.png`
+
+        if(vacio != letra) {
+             vacio.push(letra)
+             var result1 = vacio.filter((item,index) =>{
+             	return vacio.indexOf(item) === index
+             })
+             output.innerHTML = result1.join("-")
+	          }
+	           
+        if(contadorFallos > 7) {
+			document.querySelector("img").src = "Personaje/Imagen1.png"
+			vacio = []
+			output.innerHTML = ""
+			contadorFallos = 1
   
-    if(vacio.forEach() != letra) {	
-	  vacio.push(letra)
-	  output.innerHTML = vacio.join("-")
-	}
-  
-
-
-
-	
-	if(contadorFallos > 7) {
-		document.querySelector("img").src = "Imagen1.png"
-		vacio = []
-		output.innerHTML = ""
-		contadorFallos = 1
-      //palabras = ["independiente","masoquista","esternocleidomastoideo"]
-	    //palabras.push(x)
-        palabra = palabras[Math.floor(Math.random()*palabras.length)]
-	    palabraConGuiones = palabra.replace(/./g,"_ ")
-	    msj("Perdiste","Cierre el mensaje y vuelva a comenzar")
-}  
+        	palabra = palabras[Math.floor(Math.random()*palabras.length)]
+	    	palabraConGuiones = palabra.replace(/./g,"_ ")
+	    	msj("Perdiste","Cierre el mensaje y vuelva a comenzar")
+	}  
 }
 
 document.getElementById("output").innerHTML = palabraConGuiones
+document.getElementById("t-3").value = ""
 })
 
 botonComenzar.addEventListener("click",function() {
